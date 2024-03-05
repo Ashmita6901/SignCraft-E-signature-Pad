@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpg" href="digital-signature.png">
+    <script src="https://cdn.jsdelivr.net/npm/signature_pad@4.1.7/dist/signature_pad.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+    
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Poppins:wght@300&family=Protest+Riot&display=swap');
+    </style>
+    <title>SignCraft : E-Signature Hub</title>
+</head>
+<body>
+    <ul>
+        <li class="protest-riot-regular">SignCraft : E-Signature Hub</li>
+    </ul>
+    
+    </div>
+    <!--SIGNATURE PAD CANVAS-->
+    <div class="signpad">
+        <canvas id="myCanvas" width="600" height="300" style="border:1px solid #000000;"></canvas>
+    </div>
+    <!--Buttons-->
+    <div class="btn">
+        <button id="clear">Clear</button>
+        <button id="save">Save</button>
+    </div>
+    <div class="color">
+    <!-- Color picker for background color -->
+    <label for="bgColorPicker" >Background Color</label> 
+    <input type="color" id="bgColorPicker" value= "#f5f5dc" style="display: none;" > <!-- Initially hidden -->
+    <!-- Color picker for pen color -->
+    <label for="penColorPicker">Pen Color</label>
+    <input type="color" id="penColorPicker" value="#000000" style="display: none;"> <!-- Initially hidden -->
+</div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
